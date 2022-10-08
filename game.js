@@ -12,6 +12,7 @@ function generate(){
     document.getElementById("multiply").innerHTML = num1 + " x " + num2
     document.getElementById("correct").style.display = "none"
     document.getElementById("incorrect").style.display = "none"
+    document.getElementById("incorrect").innerHTML = `Incorrect, the answer was ${prod}`
     document.getElementById("answer").value = ""
 }
 
@@ -20,14 +21,17 @@ function submitAns(){
         streak += 1
         document.getElementById("correct").style.display = "block"
         document.getElementById("streak").innerHTML = "Streak: " + streak + " in a row"
+        setTimeout(function(){
+            generate()
+        }, 1000)
     } else {
         streak = 0
         document.getElementById("incorrect").style.display = "block"
         document.getElementById("streak").innerHTML = "Streak: " + streak + " in a row"
+        setTimeout(function(){
+            generate()
+        }, 3000)
     }
-    setTimeout(function(){
-        generate()
-    }, 1000)
 }
 
 function func(a){
