@@ -1,0 +1,19 @@
+body{
+    font-family: Montserrat, serif;
+    text-align: center;
+}
+div{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+#answer{
+    cursor: text;
+}
+#correct{
+    display: none;
+}
+#incorrect{
+    display: none;
+}

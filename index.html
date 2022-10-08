@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Thing</title>
+</head>
+<body>
+<div>
+    <p id="multiply">1 x 1</p>
+</div>
+<div>
+    <label for="answer">Answer</label>
+    <input type="text" id="answer" value="" onsubmit="submitAns()" autocomplete="off">
+</div>
+<div>
+    <button id="submit" onclick="submitAns()">Submit Answer</button>
+</div>
+<div>
+    <p id="streak">Streak: 0 in a row</p>
+</div>
+<div>
+    <p id="correct">Correct</p>
+    <p id="incorrect">Incorrect</p>
+</div>
+</body>
+<script src="game.js"></script>
+</html>
